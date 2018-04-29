@@ -1,0 +1,9 @@
+{
+  "name": "ionic2youtube",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": []
+}

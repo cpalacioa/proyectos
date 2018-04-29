@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar color="blacky">
+    <ion-title class="titlebar"><ion-icon name="flame" item-left></ion-icon> Catálogo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="intern">
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="Buscar por Nombre o ciudad" color="primary"></ion-searchbar>
+  <h2>Por Ciudades</h2>
+  <ion-item>
+    <ion-label>Ciudad</ion-label>
+    <ion-select >
+      <ion-option value="manizales" selected="true">Manizales</ion-option>
+      <ion-option value="pereira">Pereira</ion-option>
+    </ion-select>
+  </ion-item>
+  <h2>Lista de Modelos</h2>
+  <ion-list >
+    <ion-item color="dark" >
+      <ion-thumbnail item-left>
+        <img src="http://images.locanto.com.co/1223215436/si-eres-una-scort-de-alto-nivel-buscas-trabajo-aqui-lo-encuentra_3.jpg">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <ion-grid>
+        <ion-row >
+          <ion-col>
+            <button ion-button   small  color="buttons" icon-left>
+              <ion-icon name='musical-notes'></ion-icon>Ver Más
+            </button>
+          </ion-col >
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item color="dark" >
+      <ion-thumbnail item-left>
+        <img src="http://images.locanto.com.co/1223215436/si-eres-una-scort-de-alto-nivel-buscas-trabajo-aqui-lo-encuentra_3.jpg">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <ion-grid>
+        <ion-row >
+          <ion-col>
+            <button ion-button   small  color="buttons" icon-left>
+              <ion-icon name='musical-notes'></ion-icon>Ver Más
+            </button>
+          </ion-col >
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

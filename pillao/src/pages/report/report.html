@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Reportar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="map">
+<div>
+    <ion-title text-center>Crear Reporte</ion-title>
+    <ion-item>
+      <ion-label>Tipo de Reporte</ion-label>
+      <ion-select >
+        <ion-option value="robo" selected="true">Robo</ion-option>
+        <ion-option value="fleteo">Fleteo</ion-option>
+        <ion-option value="danovia">Daño en la via</ion-option>
+        <ion-option value="ausenciailumina">Ausencia Iluminación</ion-option>
+        <ion-option value="fugaagua">Fuga de Agua </ion-option>
+        <ion-option value="accidentetransito">Accidente de Tránsito</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Descripción</ion-label>
+ </ion-item>
+ <ion-item>
+    <ion-textarea></ion-textarea>
+ </ion-item>
+ <ion-item>
+    <img  *ngIf="guestPicture" [src]="guestPicture"/>
+   <button ion-button color="primary" block (click)="takePicture()"> Tomar foto</button>
+ </ion-item>
+ <h2>Ubicación</h2>
+  <div  #map id="map" style="height: 150px"></div>
+<ion-item>
+  <ion-label>Ciudad</ion-label>
+  <ion-input type="text" [(ngModel)]="city"></ion-input>
+</ion-item>  
+</div>
+
+</ion-content>

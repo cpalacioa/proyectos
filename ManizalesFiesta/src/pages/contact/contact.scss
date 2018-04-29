@@ -1,0 +1,33 @@
+page-contact {
+
+    .item-text-wrap{
+     font-size: 13px;
+     font-weight: bold;
+     margin-left: 0px;
+    }
+    .itemplay{
+        background-color: #1C1C1C;
+        margin-left: -10px;
+
+    }
+    .play{
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 13%;
+        height: 15%;
+        color: black;
+        background-color: #fff;
+        border-radius: 50%;
+         box-shadow: 0 0 3px gray;
+    }
+    .player{
+         margin-top: 0px;
+         height: 250px;
+    }
+
+    .item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input {
+    margin-left: 5px;
+    }
+
+}
